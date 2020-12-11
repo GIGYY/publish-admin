@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>Hello Admin</h1>
     <!-- router output -->
     <router-view/>
   </div>
@@ -8,7 +7,13 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      checked: true,
+      value: true
+    }
+  }
 }
 </script>
 
